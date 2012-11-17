@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/lgx/.myconf/.emacs.d/conf/snippets'
-let g:netrw_dirhist_2='/home/lgx/.myconf/.emacs.d/conf/snippets/text-mode/python-mode'
-let g:netrw_dirhist_3='/home/lgx/.myconf/.emacs.d/conf/lisps/auto-complete'
