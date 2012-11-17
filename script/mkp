@@ -1,0 +1,12 @@
+curpath=$(pwd)
+if [ ! $pathmarks ] 
+then
+export pathmark_num=1
+export pathmarks="($pathmark_num)$curpath\n"
+else
+export pathmarks="$pathmarks($pathmark_num)$curpath\n"
+fi
+export pathmark_num=$(($pathmark_num+1))
+echo -ne $pathmarks
+echo $pathmark_num
+export pathmark_num

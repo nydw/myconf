@@ -1,0 +1,80 @@
+#! /bin/bash
+
+
+if [ -f $rt/.ngfw_build ]
+then
+    rm $rt/.ngfw_build
+fi
+
+case $1 in                                                                                                  
+
+    lib)                                                                                                
+        echo "cd src/ngfw/common/lib" > $rt/.ngfw_build 
+        case $2 in
+            clean)
+                echo "make clean" >> $rt/.ngfw_build 
+                ;;
+            *)
+                echo "make" >> $rt/.ngfw_build 
+                ;;
+        esac
+        echo "exit" >> $rt/.ngfw_build 
+        ;;
+
+    proxy)                                                                                                
+
+        echo "cd src/ngfw/proxy/" > $rt/.ngfw_build 
+        case $2 in
+            clean)
+                echo "make clean" >> $rt/.ngfw_build 
+                ;;
+            *)
+                echo "make" >> $rt/.ngfw_build 
+                echo "./scp.sh" >> $rt/.ngfw_build 
+                ;;             
+        esac
+        echo "exit" >> $rt/.ngfw_build 
+        ;;             
+
+    release)                                                                                                
+        echo "cd src/ngfw/os/bin/" > $rt/.ngfw_build 
+        echo "/src/ngfw/os/bin/mk_os release" >> $rt/.ngfw_build 
+        echo "exit" >> $rt/.ngfw_build 
+        ;;                                                                                                  
+
+    test)                                                                                                   
+        echo "cd src/ngfw/os/bin/" > $rt/.ngfw_build 
+        echo "/src/ngfw/os/bin/mk_os test" >> $rt/.ngfw_build 
+        echo "/src/ngfw/os/bin/gx.sh test" >> $rt/.ngfw_build 
+        echo "exit" >> $rt/.ngfw_build 
+        ;;                                                                                                  
+
+    mini)                                                                                        
+        echo "cd src/ngfw/os/bin/" > $rt/.ngfw_build 
+        echo "/src/ngfw/os/bin/mk_os minimal-product" >> $rt/.ngfw_build 
+        echo "/src/ngfw/os/bin/gx.sh test" >> $rt/.ngfw_build 
+        echo "exit" >> $rt/.ngfw_build 
+        ;;                                                                                                  
+    clean) # to clean oem files,  the second argument must be oem name                                       
+        echo "cd src/ngfw/os/bin/" > $rt/.ngfw_build 
+        echo "/ngfw/os/bin/mk_os clean" >> $rt/.ngfw_build 
+        echo "exit" >> $rt/.ngfw_build 
+        ;;                                                                                                  
+    help)
+        echo " "
+        echo -e " release;\n mini;\n help;\n default proxy\n"
+        echo -e " lib;\n proxy;\n test;\n clean;\n"
+        echo " "
+        exit 0
+        ;;
+    *)                                                                                                      
+        echo "cd src/ngfw/proxy/" > $rt/.ngfw_build 
+        echo "make" >> $rt/.ngfw_build 
+        echo "./scp.sh" >> $rt/.ngfw_build 
+        echo "exit" >> $rt/.ngfw_build 
+        ;;                                                                                                  
+esac          
+
+cd $pj ; 
+./build_cross_env.sh anchiva_x86/ ; 
+echo "" > $rt/.ngfw_build 
