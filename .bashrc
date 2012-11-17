@@ -134,7 +134,6 @@ alias cdc="dirs -c;pushd ~/"
 alias iv="vim"
 alias ctags=ctags --link=yes
 alias vio="vim -R"
-alias vip="vim my.vimentry"
 alias reboot=" echo \"are you sure ? yes/no\" "
 alias shutdown="echo \"are you sure ? yes/no\" "
 
@@ -826,6 +825,19 @@ vims ()
 {
       vim sudo:$1
 }
+
+#for vim open vimentry
+vip ()
+{
+    if [ -e my.vimentry ] 
+    then
+        vim ./my.vimentry
+    else
+        echo no 
+    fi
+}
+
+
 
 # sh-shell:bash
 # End of File
