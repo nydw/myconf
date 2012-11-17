@@ -1,0 +1,59 @@
+#! /bin/bash
+num=$1
+if [[ "$1" = "" ]]
+then
+    read -p  "enter your num:" num  
+fi
+
+case $2 in 
+    f)
+        a=`echo $num|tr "[g-z]" "[G-Z]"`  
+        if [ $num != $a ]  
+        then  
+            echo -e "\033[40;31;5m failt \033[0m"  
+            exit 0
+        else  
+            echo -e "\033[40;32;1m num is \033[40;31;5m hex\033[0m"  
+            result=`echo "obase=10;ibase=16;$num"|bc`  
+            echo -e "\033[40;32;1m 10 result is \033[40;31;5m $result\033[0m"  
+            result=`echo "obase=2;ibase=16;$num"|bc`  
+            echo -e "\033[40;32;1m 02 result is \033[40;31;5m $result\033[0m"  
+            result=`echo "obase=16;ibase=16;$num"|bc`  
+            echo -e "\033[40;32;1m 16 result is \033[40;31;5m $result\033[0m"  
+            exit 0
+        fi 
+        ;;
+    2)
+        a=`echo $num|tr "[2-9][a-z][A-Z]" "[4-5][A-Z][a-z]"`   #判断是否符合二进制标准  
+        if [ $num != $a ] 
+        then  
+            echo -e "\033[40;31;5m failt \033[0m" 
+        else             
+            echo -e "\033[40;32;1m num is \033[40;31;5m bin\033[0m"  
+            result=`echo "obase=10;ibase=2;$num"|bc`  
+            echo -e "\033[40;32;1m 10 result is \033[40;31;5m $result\033[0m"  
+            result=`echo "obase=2;ibase=2;$num"|bc`  
+            echo -e "\033[40;32;1m 02 result is \033[40;31;5m $result\033[0m"  
+            result=`echo "obase=16;ibase=2;$num"|bc`  
+            echo -e "\033[40;32;1m 16 result is \033[40;31;5m $result\033[0m"  
+
+        fi  
+        ;;
+  *)
+        a=`echo $num|tr "[a-z][A-Z]" "[A-Z][a-z]"` #判断是否符合十进制标准  
+        if [ $num != $a ] 
+        then  
+            echo -e "\033[40;31;5m failt \033[0m" 
+        else             
+            echo -e "\033[40;32;1m num is \033[40;31;5m dec\033[0m"  
+            result=`echo "obase=10;ibase=10;$num"|bc`  
+            echo -e "\033[40;32;1m 10 result is \033[40;31;5m $result\033[0m"  
+            result=`echo "obase=2;ibase=10;$num"|bc`  
+            echo -e "\033[40;32;1m 02 result is \033[40;31;5m $result\033[0m"  
+            result=`echo "obase=16;ibase=10;$num"|bc`  
+            echo -e "\033[40;32;1m 16 result is \033[40;31;5m $result\033[0m"  
+
+        fi  
+        ;;
+esac
+

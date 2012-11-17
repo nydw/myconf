@@ -1,0 +1,19 @@
+echo -ne $pathmarks
+read index
+
+expr  ${index}  +  0  1>/dev/null  2>&1  
+
+if  [  $? -ne 0 ];  then  
+echo  "\"${index}\" is not a number !"  
+#exit
+fi
+
+if [[ "$index" > "$pathmark_num" ]];  then  
+echo -ne "\"${index}\":\"${pathmark_num}\"\n"
+#exit
+fi
+
+cdpath=$(echo -ne $pathmarks | sed -n "$index"p | sed 's/(.*)//')
+
+cd $cdpath
+
