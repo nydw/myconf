@@ -16,5 +16,7 @@
 (setq hl-paren-colors '("red" "yellow" "cyan" "magenta" "green" "red"))
 
 (require 'init-fonts)
+(require 'ibus)
+(add-hook 'after-init-hook 'ibus-mode-on)
 
 
