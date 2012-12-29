@@ -1,0 +1,61 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/lgx/" . "workspace/")
+ ("/home/" . "lgx/")
+ ("/" . "home/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/lgx/workspace/"
+ "/home/lgx/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "a.c"
+ "a.el"
+ "aaaaaaaaaaaaaaaaaa"
+ "b.c"
+ "a.py"
+ "a.rb"
+ "a.php"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/lgx/workspace/" (20702 39871) "a.c" "./" ".emacs.d/" "../" "linux/")
+
+ ("/home/lgx/" (20702 26184) ".m2/" ".sqlite_history" ".recentf" ".gvfs/" "Pictures/" ".xmodmaprc" ".mozilla/" ".ICEauthority" "Source Insight/" ".gitconfig" "./" ".macromedia/" ".VirtualBox/" ".xchat2/" ".gnupg/" ".myconf/" ".emacs.d/" ".Xauthority" "Videos/" ".xsession-errors" ".lein/" "ahei/" ".bashrc" ".pki/" ".Foxit/" ".viminfo" ".subversion/" ".dmrc" ".local/" ".wireshark/" ".emacs-places" ".bash_logout" "Desktop/" ".config/" ".ido.last" "Documents/" ".dbus/" "../" ".gnome2/" ".slime/" ".bash_history" "purell/" "Music/" "workspace/" ".gconf/" ".adobe/" ".xinput.d/" ".dia/" ".vim-fuf-data/" ".thumbnails/" ".mtpaint" "Public/" ".odbc.ini" ".linuxmint/" ".smex-items" ".vimrc" ".pam_environment" ".pulse-cookie" ".cache/" "Templates/" ".purple/" "emacs-live/" ".gtk-bookmarks" ".vim/" ".gksu.lock" ".gnome2_private/" ".pulse/" ".face" ".opera/" "Downloads/" ".profile" ".fontconfig/" ".java_history" ".git-credential-cache/" ".data/" ".gstreamer-0.10/" ".yankring_history_v2.txt" ".wine/")
+
+ ("/home/lgx/emacs-live/" (20698 58844) ".git/" "packs/" "./" ".gitignore" ".gitmodules" "README.md" "../" "etc/" "installer/" "init.el" "manifest.el" "lib/")
+
+ ("/home/lgx/.live-packs/lgx-pack/config/" (20697 44326) ".gitkeep" "./" "myfont.el" "bindings.el" "../" "my-fontset-win.el" "font-settings.el" "font-lock-face-settings.el")
+
+ ("/home/lgx/.live-packs/" (20697 42851) "./" "lgx-pack/" "../")
+
+ ("/home/lgx/.live-packs/lgx-pack/" (20697 44136) "./" "config/" "README.md" "../" "init.el" "lib/")
+
+ ("/home/lgx/.emacs.d/" (20696 34414) ".git/" "packs/" "./" "tmp/" ".gitignore" ".gitmodules" "README.md" "../" "etc/" "installer/" "init.el" "manifest.el" "lib/")
+
+ ("/home/lgx/.emacs.d/installer/" (20696 34366) "./" "../" "intro.txt" "outro.txt" "install-emacs-live.sh")
+
+ ("/home/" (20561 53072) "./" "lgx/" "../")
+
+ ("/usr/" (20373 15965) "games/" "./" "sbin/" "bin/" "local/" "src/" "../" "share/" "lib/" "include/")
+
+ ("/usr/local/" (20563 24581) "games/" "./" "var/" "man/" "sbin/" "bin/" "src/" "../" "etc/" "share/" "libexec/" "lib/" "include/")
+
+ ("/usr/local/share/" (20584 6034) "./" "ca-certificates/" "icons/" "gtags/" "man/" "fonts/" "sgml/" "tokyocabinet/" "applications/" "../" "info/" "xml/" "emacs/")
+
+ ("/usr/local/share/emacs/" (20563 24550) "./" "site-lisp/" "../" "24.2/")
+
+ ("/usr/local/share/emacs/24.2/" (20563 24582) "./" "site-lisp/" "leim/" "../" "etc/" "lisp/")
+
+ ("/usr/local/share/emacs/24.2/etc/" (20563 24562) "NEWS.18" "HELLO" "srecode/" "DOC-24.2.1" "schema/" "NEWS" "refcards/" "DISTRIB" "PROBLEMS" "copying.paper" "NEWS.1-17" "GNU" "charsets/" "./" "DEBUG" "ps-prin1.ps" "ETAGS.README" "spook.lines" "emacs3.py" "ORG-NEWS" "enriched.doc" "emacs2.py" "JOKES" "MOTIVATION" "ERC-NEWS" "NEWS.20" "forms-d2.dat" "MAILINGLISTS" "ses-example.ses" "NEWS.19" "condom.1" "celibacy.1" "GNUS-NEWS" "emacs.desktop" "../" "NEWS.21" "MH-E-NEWS" "grep.txt" "nxml/" "emacs-buffer.gdb" "TODO" "NEWS.22" "DEVEL.HUMOR" "COPYING" "FTP" "SERVICE" "WHY-FREE" "CENSORSHIP" "CONTRIBUTE" "sex.6" "MORE.STUFF" "edt-user.el" "yow.lines" "tutorials/" "NXML-NEWS" "org/" "INTERVIEW" "gnus-tut.txt" "TERMS" "NEXTSTEP" "e/" "THE-GNU-PROJECT" "ORDERS" "LINUX-GNU" "emacs.icon" "future-bug" "MACHINES" "ps-prin0.ps" "ETAGS.EBNF" "images/" "NEWS.23" "gnus/" "COOKIES" "compilation.txt" "rgb.txt" "emacs.py" "README" "themes/" "AUTHORS" "echo.msg")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
