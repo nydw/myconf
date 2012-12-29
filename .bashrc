@@ -45,7 +45,7 @@ set -o noclobber    # prevents catting over file
 set -o ignoreeof    # can not C-d out of shell
 #set -o nounset      # attempt to use undefined variable outputs error message and forces exit
 #set -o xtrace      # Useful for debuging.
-set -o vi
+#set -o vi
 
 # Enable options:
 shopt -s cdspell        # auto fix cd / spelling mistakes
@@ -134,6 +134,7 @@ alias cdc="dirs -c;pushd ~/"
 alias iv="vim"
 alias ctags=ctags --link=yes
 alias vio="vim -R"
+alias vip="vim my.vimentry"
 alias reboot=" echo \"are you sure ? yes/no\" "
 alias shutdown="echo \"are you sure ? yes/no\" "
 
@@ -825,19 +826,6 @@ vims ()
 {
       vim sudo:$1
 }
-
-#for vim open vimentry
-vip ()
-{
-    if [ -e my.vimentry ] 
-    then
-        vim ./my.vimentry
-    else
-        echo no 
-    fi
-}
-
-
 
 # sh-shell:bash
 # End of File
