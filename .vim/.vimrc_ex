@@ -11,8 +11,8 @@
 "/////////////////////////////////////////////////////////////////////////////
 
 " set EX_DEV variable for linux
- let $EX_DEV='~/.vim'
- let g:ex_toolkit_path = '~/.vim/toolkit'
+ let $EX_DEV='/home/lgx/.myconf/.vim'
+ let g:ex_toolkit_path = '/home/lgx/.myconf/.vim/toolkit'
 
 " put your own user name here
 let g:ex_usr_name = "lgx"
