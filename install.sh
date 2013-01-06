@@ -22,7 +22,7 @@ fi
 
 if [ -e ~/.emacs.d ]
 then
-   mv ~/.emacs.d ~/dotemacsd_yourself_old
+   mv ~/.emacs.d ~/dotemacs.d_yourself_old
 fi
 
 
