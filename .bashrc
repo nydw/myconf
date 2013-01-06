@@ -30,7 +30,8 @@ export LESS='-i -N -w  -z-4 -g -e -M -X -F -R -P%t?f%f \
 export MAILCHECK=0
 export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
 export NOCOLOR=1
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"; echo -en "\033[36m["`date +%F\ %T`"] "; echo -e "\033[4;35m"`pwd`${NC}'
+#export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"; echo -en "\033[36m["`date +%F\ %T`"] "; echo -e "\033[4;35m"`pwd`${NC}'
+export PROMPT_COMMAND='echo -en "\033[36m["`date +%F\ %T`"] "; echo -e "\033[4;35m"`pwd`${NC}'
 export RZSZLINE=/dev/modem
 
 #-------------------------------------------------------------
@@ -168,7 +169,7 @@ alias virc='vim ~/.bashrc'
 alias cls='clear'
 alias zz='exit'
 alias xx='exit'
-alias vi='vim'
+alias vi='vim -X'
 #alias em='emacs --debug-init $* &'
 
 #-------------------------------------------------------------
