@@ -20,6 +20,11 @@ then
    mv ~/.vim ~/dotvim_yourself_old
 fi
 
+if [ -e ~/.emacs.d ]
+then
+   mv ~/.emacs.d ~/dotemacsd_yourself_old
+fi
+
 
 ln -s ~/.myconf/.vim/.vimrc_A ~/.vimrc
 ln -s ~/.myconf/.vim  ~/.vim
