@@ -24,7 +24,7 @@ if [ -e ~/.emacs.d ]
 then
    mv ~/.emacs.d ~/dotemacs.d_yourself_old
 fi
-##
+###
 
 ln -s ~/.myconf/.vim/.vimrc_A ~/.vimrc
 ln -s ~/.myconf/.vim  ~/.vim
