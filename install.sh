@@ -24,7 +24,5 @@ fi
 ln -s ~/.myconf/.vim/.vimrc_A ~/.vimrc
 ln -s ~/.myconf/.vim  ~/.vim
 ln -s ~/.myconf/.bashrc  ~/.bashrc
-
-#ln -s ~/.myconf/.emacs.d  ~/.emacs.d
-#ln -s ~/.emacs.d/conf/.emacs.changed ~/.emacs 
+ln -s ~/.myconf/.emacs.d  ~/.emacs.d
 
