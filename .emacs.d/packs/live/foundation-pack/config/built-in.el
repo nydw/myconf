@@ -11,9 +11,10 @@
 (mouse-avoidance-mode 'animate)    
 (setq frame-title-format 'buffer-file-name)    
 (setq default-directory "~/workspace/")     
-(set-default-font "Courier 10 Pitch 10")    
-(set-fontset-font "fontset-default"    
-                  'han '("Microsoft YaHei" . "unicode-bmp"))    
+;;(set-default-font "Courier 10 Pitch 10") 
+(set-default-font "Courier New 14")    
+;;(set-fontset-font "fontset-default"    
+;;                 'han '("Microsoft YaHei" . "unicode-bmp"))    
 (setq c-default-style '((c-mode . "k&r") (other . "gnu")))    
 (setq c-basic-offset 4)    
 
