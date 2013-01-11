@@ -16,9 +16,9 @@
 ;remove bells
 (setq ring-bell-function 'ignore)
 
-(cond
- ((and (window-system) (eq system-type 'darwin))
-  (add-to-list 'default-frame-alist '(font . "Menlo-12"))))
+;;;(cond
+;;; ((and (window-system) (eq system-type 'darwin))
+;;;  (add-to-list 'default-frame-alist '(font . "Menlo-12"))))
 
 ;; make fringe smaller
 (if (fboundp 'fringe-mode)
