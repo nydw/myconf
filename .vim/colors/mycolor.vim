@@ -168,15 +168,15 @@ elseif &t_Co == 256
 	hi Constant       ctermbg=234  ctermfg=112   cterm=bold  "" stderr
 	hi String         ctermbg=234  ctermfg=191   cterm=none  "" helloworld
 	hi Error          ctermbg=234  ctermfg=203   cterm=none
-	hi Identifier     ctermbg=234  ctermfg=75    cterm=none
-	hi Function       ctermbg=234  ctermfg=069   cterm=bold
+	hi Identifier     ctermbg=234  ctermfg=255   cterm=none
+	hi Function       ctermbg=234  ctermfg=148   cterm=none
 	hi Ignore         ctermbg=234  ctermfg=234   cterm=none
 	hi MatchParen     ctermbg=154  ctermfg=197   cterm=bold  "" {}()[]
 	hi PreProc        ctermbg=234  ctermfg=161   cterm=none  "" #include #define
 	hi Special        ctermbg=234  ctermfg=227   cterm=none
 	hi Todo           ctermbg=234  ctermfg=203   cterm=bold
 	hi Underlined     ctermbg=234  ctermfg=203   cterm=underline
-    hi Statement      ctermbg=234  ctermfg=162   cterm=none  "" if else
+    hi Statement      ctermbg=234  ctermfg=162   cterm=bold  "" if else
 	hi Operator       ctermbg=234  ctermfg=204   cterm=none
 	hi Delimiter      ctermbg=234  ctermfg=204   cterm=none
 	hi Type           ctermbg=234  ctermfg=075   cterm=bold  "" int char
