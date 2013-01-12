@@ -188,7 +188,6 @@ elseif &t_Co == 256
     hi Float          ctermbg=234  ctermfg=191   cterm=bold 
 
 
-hi cccc  cterm=bold  ctermfg=blue
 
 
 
