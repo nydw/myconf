@@ -189,15 +189,15 @@ snippet td
 # Desc: Typedef struct
 # ------------------------------------------------------------------ 
 
-snippet tds
-	typedef struct ${1:name} 
+snippet tdst
+	typedef struct __${1:name} 
 	{
-		${3:/* TODO: members */}
+		${2:/* TODO: members */}
 
 
 
 
-	} ${2:$1_t};
+	} $1_t;
 
 # ------------------------------------------------------------------ 
 # Desc: Struct
@@ -210,7 +210,7 @@ snippet st
 
 
 
-	}; // end struct $1
+	}; /* end $1 */
 
 
 # ------------------------------------------------------------------ 
