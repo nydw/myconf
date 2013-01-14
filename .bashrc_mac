@@ -168,7 +168,7 @@ alias virc='vim ~/.bashrc'
 alias cls='clear'
 alias zz='exit'
 alias xx='exit'
-alias vi='vim -X'
+#alias vi='vim -X'
 #alias em='emacs --debug-init $* &'
 
 #-------------------------------------------------------------
