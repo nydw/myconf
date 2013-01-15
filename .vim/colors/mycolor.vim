@@ -169,7 +169,7 @@ elseif &t_Co == 256
 	hi String         ctermbg=234  ctermfg=191   cterm=none  "" helloworld
 	hi Error          ctermbg=234  ctermfg=203   cterm=none
 	hi Identifier     ctermbg=234  ctermfg=255   cterm=none
-	hi Function       ctermbg=234  ctermfg=148   cterm=none
+	hi Function       ctermbg=234  ctermfg=051   cterm=none
 	hi Ignore         ctermbg=234  ctermfg=234   cterm=none
 	hi MatchParen     ctermbg=154  ctermfg=197   cterm=bold  "" {}()[]
 	hi PreProc        ctermbg=234  ctermfg=161   cterm=none  "" #include #define
