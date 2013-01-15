@@ -120,6 +120,7 @@ elseif &t_Co == 256
 	hi CursorIM       ctermbg=227  ctermfg=234   cterm=none
 	hi CursorColumn   ctermbg=0                  cterm=none
 	hi CursorLine     ctermbg=0                  cterm=none
+    hi ColorColumn    ctermbg=234  ctermfg=190   cterm=bold
 
 	" -> Folding
 	hi FoldColumn     ctermbg=234  ctermfg=25    cterm=none
