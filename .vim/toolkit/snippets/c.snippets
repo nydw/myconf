@@ -259,3 +259,15 @@ snippet spr
 
 snippet fpr
 	fprintf ( ${1:stderr}, "${2:%s}\n", ${3} );
+
+# ------------------------------------------------------------------ 
+# dot ip address
+#-------------------------------------------------------------------
+
+snippet dotip
+	#define NIPQUAD(addr) \
+	    ((unsigned char *)addr)[0],  \
+	    ((unsigned char *)addr)[1],  \
+	    ((unsigned char *)addr)[2],  \
+	    ((unsigned char *)addr)[3]
+
