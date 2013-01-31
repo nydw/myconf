@@ -881,7 +881,7 @@ nnoremap <unique> <leader>fc :ExpjGotoCurrentFile<CR>
 
 let g:exPJ_backto_editbuf = 1
 let g:exPJ_close_when_selected = 0
-let g:exPJ_window_width = 30
+let g:exPJ_window_width = 40
 let g:exPJ_window_width_increment = 50
 
 " ------------------------------------------------------------------ 
