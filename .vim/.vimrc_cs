@@ -14,38 +14,6 @@
 " Use Vim settings, rather then Vi settings.
 " This must be first, because it changes other options as a side effect.
 "-------------------------------------------------------------------------------
-set nocompatible
-"
-"-------------------------------------------------------------------------------
-" Enable file type detection. Use the default filetype settings.
-" Also load indent files, to automatically do language-dependent indenting.
-"-------------------------------------------------------------------------------
-filetype  plugin on
-filetype  indent on
-"
-"-------------------------------------------------------------------------------
-" Switch syntax highlighting on.
-"-------------------------------------------------------------------------------
-syntax    on            
-"
-" Platform specific items:
-" - central backup directory (has to be created)
-" - default dictionary
-" Uncomment your choice.  
-if  has("win16") || has("win32")     || has("win64") || 
-  \ has("win95") || has("win32unix")
-    "
-"    runtime mswin.vim
-"    set backupdir =$VIM\vimfiles\backupdir
-"    set dictionary=$VIM\vimfiles\wordlists/german.list
-else
-"    set backupdir =$HOME/.vim.backupdir
-"    set dictionary=$HOME/.vim/wordlists/german.list
-endif
-"
-" Using a backupdir under UNIX/Linux: you may want to include a line similar to
-"   find  $HOME/.vim.backupdir -name "*" -type f -mtime +60 -exec rm -f {} \;
-" in one of your shell startup files (e.g. $HOME/.profile)
 "
 "-------------------------------------------------------------------------------
 " Various settings
@@ -85,12 +53,6 @@ if has("autocmd")
 endif
 "
 "-------------------------------------------------------------------------------
-" close window (conflicts with the KDE setting for calling the process manager)
-"-------------------------------------------------------------------------------
- noremap  <C-Esc>       :close<CR>
-inoremap  <C-Esc>  <C-C>:close<CR>
-"
-"-------------------------------------------------------------------------------
 " Fast switching between buffers
 " The current buffer will be saved before switching to the next one.
 " Choose :bprevious or :bnext
@@ -100,10 +62,6 @@ inoremap  <C-Esc>  <C-C>:close<CR>
 inoremap  <silent> <s-tab>  <C-C>:if &modifiable && !&readonly && 
      \                      &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 "
-"-------------------------------------------------------------------------------
-" Leave the editor with Ctrl-q (KDE): Write all changed buffers and exit Vim
-"-------------------------------------------------------------------------------
-nnoremap  <C-q>    :wqall<CR>
 "
 "-------------------------------------------------------------------------------
 " When editing a file, always jump to the last known cursor position.
@@ -118,25 +76,6 @@ if has("autocmd")
 endif " has("autocmd")
 "
 "-------------------------------------------------------------------------------
-"  some additional hot keys
-"-------------------------------------------------------------------------------
-"    F5   -  open quickfix error window
-"    F6   -  close quickfix error window
-"    F7   -  display previous error
-"    F8   -  display next error   
-"-------------------------------------------------------------------------------
-"
-map   <silent> <F5>        :copen<CR>
-map   <silent> <F6>        :cclose<CR>
-map   <silent> <F7>        :cp<CR>
-map   <silent> <F8>        :cn<CR>
-"
-imap  <silent> <F5>   <Esc>:copen<CR>
-imap  <silent> <F6>   <Esc>:cclose<CR>
-imap  <silent> <F7>   <Esc>:cp<CR>
-imap  <silent> <F8>   <Esc>:cn<CR>
-"
-"-------------------------------------------------------------------------------
 " Fast switching between buffers
 " The current buffer will be saved before switching to the next one.
 " Choose :bprevious or :bnext
@@ -147,10 +86,6 @@ imap  <silent> <F8>   <Esc>:cn<CR>
 imap  <silent> <s-tab>  <Esc>:if &modifiable && !&readonly && 
      \                  &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 "
-"-------------------------------------------------------------------------------
-" Leave the editor with Ctrl-q : Write all changed buffers and exit Vim
-"-------------------------------------------------------------------------------
-nmap  <C-q>    :wqa<CR>
 "
 "-------------------------------------------------------------------------------
 " comma always followed by a space
