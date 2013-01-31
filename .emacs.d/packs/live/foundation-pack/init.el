@@ -27,7 +27,7 @@
 (live-load-config-file "spelling-conf.el")
 (live-load-config-file "lisp-conf.el")
 (live-load-config-file "zone-conf.el")
-(live-load-config-file "evil-conf.el")
+;(live-load-config-file "evil-conf.el")
 
 
 (live-load-config-file "myself-conf.el")
