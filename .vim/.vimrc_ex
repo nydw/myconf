@@ -11,8 +11,14 @@
 "/////////////////////////////////////////////////////////////////////////////
 
 " set EX_DEV variable for linux
- let $EX_DEV='/home/lgx/.myconf/.vim'
- let g:ex_toolkit_path = '/home/lgx/.myconf/.vim/toolkit'
+if has ("unix")
+    let $EX_DEV='~/.myconf/.vim'
+    let g:ex_toolkit_path = '~/.myconf/.vim/toolkit'
+elseif has ("mac")
+    let $EX_DEV='/Users/lgx/.myconf/.vim'
+    let g:ex_toolkit_path = '/Users/lgx/.myconf/.vim/toolkit'
+
+endif
 
 " put your own user name here
 let g:ex_usr_name = "lgx"
@@ -30,7 +36,7 @@ if has ("win32")
 elseif has ("mac")
     silent exec "language en_US" 
 else
-    silent exec "language en_US.utf8" 
+    silent exec "language en_US.UTF-8" 
 endif
 
 au FileType c,cpp,cs,swig set nomodeline " this will avoid bug in my project with namespace ex, the vim will tree ex:: as modeline.
