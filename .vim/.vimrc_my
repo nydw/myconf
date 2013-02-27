@@ -104,4 +104,4 @@ let g:rainbow_operators = 1
 "indent all file
 """""""""""""""""""""""""""""""""""""
 noremap = <Esc>ggvG=<C-o><C-o>  
-
+set mouse=v
