@@ -101,7 +101,8 @@ inoremap { {<CR>}<ESC>O
 "
 vnoremap ( s()<Esc>P<Right>%
 vnoremap [ s[]<Esc>P<Right>%
-vnoremap { s{}<Esc>P<Right>%
+vnoremap { s{}<CR><Esc>k<Esc>p<Esc>kv%=
+
 "
 "-------------------------------------------------------------------------------
 " autocomplete quotes (visual and select mode)
