@@ -76,11 +76,11 @@ map ,exp :Explore<CR>
 :inoremap > <c-r>=ClosePair('>')<CR>
 
 function ClosePair(char)
-	if getline('.')[col('.') - 1] == a:char
-		return "\<Right>"
-	else
-		return a:char
-	endif
+    if getline('.')[col('.') - 1] == a:char
+        return "\<Right>"
+    else
+        return a:char
+    endif
 endf
 
 " NERD tree
@@ -100,12 +100,8 @@ let g:rainbow_active = 1
 let g:rainbow_operators = 1 
 
 
-
-
-
-
-
-
-
-
+"""""""""""""""""""""""""""""""""""""
+"indent all file
+"""""""""""""""""""""""""""""""""""""
+noremap = <Esc>ggvG=<C-o><C-o>  
 
