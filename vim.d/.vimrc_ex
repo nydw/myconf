@@ -12,11 +12,11 @@
 
 " set EX_DEV variable for linux
 if has ("unix")
-    let $EX_DEV='~/.myconf/.vim'
-    let g:ex_toolkit_path = '~/.myconf/.vim/toolkit'
+    let $EX_DEV='~/.myconf/vim.d'
+    let g:ex_toolkit_path = '~/.myconf/vim.d/toolkit'
 elseif has ("mac")
-    let $EX_DEV='/Users/lgx/.myconf/.vim'
-    let g:ex_toolkit_path = '/Users/lgx/.myconf/.vim/toolkit'
+    let $EX_DEV='/Users/lgx/.myconf/vim.d'
+    let g:ex_toolkit_path = '/Users/lgx/.myconf/vim.d/toolkit'
 
 endif
 
