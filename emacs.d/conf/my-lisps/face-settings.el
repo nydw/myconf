@@ -26,7 +26,7 @@
 
 (fringe-mode 1)
 (setq fringe-mode 'half-width)
-
+(require 'mode-line-setting)
 
 
 (provide 'face-settings)

@@ -6,13 +6,17 @@
 (require 'linum+)
 
 
+
 (defun linum-face-setting ()
   "Face settings for `linum'."
   (custom-set-faces
-   '(linum
-     ((((background "white"))
-       :foreground "cyan")))))
-;;      (t :foreground "green")))))
+    '(linum
+       ((((background dark))
+         :foreground "cyan")
+        (t :background "LightYellow3")
+        (t :foreground "dark")))))
+
+
 
 
 
@@ -34,10 +38,10 @@
 
 
 (eval-after-load 'linum
-  `(linum-face-setting))
+                 `(linum-face-setting))
 
 (eval-after-load 'linum
-  `(linum-setting))
+                 `(linum-setting))
 
 
 

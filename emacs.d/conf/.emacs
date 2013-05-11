@@ -15,8 +15,14 @@
 (require 'little-setting)
 (require 'face-settings)
 (require 'c-setting)
-
+(require 'key-map)
 (require 'undo-tree)
+(require 'evil)
+(evil-mode 1)
+
+
+
+
 (global-undo-tree-mode)
 
 

@@ -49,8 +49,6 @@
   "STR1 equal ignore case to STR2 or not."
   (string= (downcase str1) (downcase str2)))
 
-(global-set-key (kbd "M-f") 'forward-to-word)
-(global-set-key (kbd "M-b") 'backward-to-word)
 
 (defvar switch-major-mode-last-mode nil)
 
@@ -118,16 +116,14 @@
         (select-window first-win)
         (if this-win-2nd (other-window 1))))))
 
-(global-set-key [(control c) (|)] 'toggle-window-split)
 
-
+;; 调节行间距
 (defun toggle-line-spacing () 
 "Toggle line spacing between 1 and 5 pixels." 
 (interactive) 
 (if (eq line-spacing 1) 
 (setq-default line-spacing 7) 
 (setq-default line-spacing 1)))
-(global-set-key (kbd "<C-f11>") 'toggle-line-spacing) 
 
 
 
