@@ -1,6 +1,0 @@
-;; myself bindings
-
-
-
-
-
