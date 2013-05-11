@@ -35,14 +35,14 @@ See also `linum-before-numbering-hook'."
 
 ;;;###autoload
 ;;;(defcustom linum+-dynamic-format "%%%dd|"
-(defcustom linum+-dynamic-format "%%%dd"
+(defcustom linum+-dynamic-format " %%%dd."
   "Format used to generate line number format when `linum-format' is `dynamic'."
   :group 'linum+
   :type 'sexp)
 
 ;;;###autoload
 ;;;(defcustom linum+-smart-format "%%%dd|"
-(defcustom linum+-smart-format "%%%dd"
+(defcustom linum+-smart-format " %%%dd."
   "Format used to generate line number format when `linum-format' is `smart'."
   :group 'linum+
   :type 'sexp)

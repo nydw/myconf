@@ -46,12 +46,12 @@
 
 
 (setq initial-frame-alist 
-      '((top . 81)(left . 360)(width . 160)(height.64)))
+      '((top . 49)(left . 360)(width . 160)(height.60)))
 
 (if window-system
   (setq default-frame-alist 
         (append 
-          '((top . 81)(left . 360)(width . 160)(height . 64)) 
+          '((top . 49)(left . 360)(width . 160)(height . 60)) 
           default-frame-alist)))
 
 ;; 在fringe上显示一个小箭头
