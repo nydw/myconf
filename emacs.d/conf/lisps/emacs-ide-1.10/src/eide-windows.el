@@ -610,12 +610,12 @@ and display it. Current buffer is kept if correct."
   (if (and eide-custom-override-emacs-settings eide-custom-extend-color-theme-to-source-code)
     (progn
       (set-background-color eide-config-background-color)
-      (set-foreground-color eide-config-foreground-color)
-      (set-face-background 'fringe eide-config-background-color))
+      (set-foreground-color eide-config-foreground-color))
+  ;    (set-face-background 'fringe eide-config-background-color))
     (progn
       (set-background-color eide-config-user-background-color)
-      (set-foreground-color eide-config-user-foreground-color)
-      (set-face-background 'fringe eide-config-user-background-color))))
+      (set-foreground-color eide-config-user-foreground-color))))
+  ;    (set-face-background 'fringe eide-config-user-background-color))))
 
 (defun eide-windows-handle-mouse-3 ()
   "Handle mouse-3 (right click) action."

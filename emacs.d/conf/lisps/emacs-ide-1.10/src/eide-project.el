@@ -222,8 +222,8 @@ Arguments:
 (defun eide-i-project-set-colors-for-config ()
   "Set colors for config buffer."
   (set-background-color eide-config-config-background-color)
-  (set-foreground-color eide-config-config-foreground-color)
-  (set-face-background 'fringe eide-config-config-background-color))
+  (set-foreground-color eide-config-config-foreground-color))
+;  (set-face-background 'fringe eide-config-config-background-color))
 
 (defun eide-i-project-get-config-value-if-defined (p-parameter)
   "Get the value of a parameter in a config (current buffer), returns nil if
