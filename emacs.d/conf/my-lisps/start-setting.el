@@ -39,6 +39,23 @@
      ,(concat "`" (symbol-name symbol) "' is t or not.")
      (am-variable-is-t ',symbol)))
 
+(defun apply-args-list-to-fun (fun-list args-list)
+  "Apply args list to function FUN-LIST.
+FUN-LIST can be a symbol, also can be a list whose element is a symbol."
+  (let ((is-list (and (listp fun-list) (not (functionp fun-list)))))
+    (dolist (args args-list)
+      (if is-list
+          (dolist (fun fun-list)
+            (apply-args-to-fun fun args))
+        (apply-args-to-fun fun-list args)))))
+
+;;;###autoload
+(defun apply-args-to-fun (fun args)
+  "Apply args to function FUN."
+  (if (listp args)
+      (eval `(,fun ,@args))
+    (eval `(,fun ,args))))
+
 
 ;; 个人信息
 (setq user-mail-address "myemail.com")

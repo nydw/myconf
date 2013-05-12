@@ -5,6 +5,7 @@
 (defconst my-emacs-path           "~/.emacs.d/conf/" "config file path")
 (defconst my-emacs-my-lisps-path  (concat my-emacs-path "my-lisps/") "priv config file path")
 (defconst my-emacs-lisps-path     (concat my-emacs-path "lisps/") "download config file path")
+(defconst my-emacs-templates-path (concat my-emacs-path "lisps/templates/templates/") "Path for templates")
 
 (load (concat my-emacs-my-lisps-path "my-subdirs"))
 (my-add-subdirs-to-load-path my-emacs-lisps-path)
@@ -14,7 +15,7 @@
 (require 'start-setting)
 (require 'little-setting)
 (require 'face-settings)
-(require 'c-setting)
+(require 'dev-settings)
 (require 'key-map)
 (require 'undo-tree)
 (require 'evil)
