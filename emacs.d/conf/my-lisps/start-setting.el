@@ -5,14 +5,11 @@
 
 (defalias 'move-beginning-of-line 'beginning-of-line)
 (defalias 'move-end-of-line       'end-of-line)
+
+;;PATH
 ;(setq exec-path (append exec-path '("/usr/texbin" "/opt/local/bin")))
-
-
 (require 'exec-path-from-shell) 
 (exec-path-from-shell-initialize)
-
-
-
 
 
 (defun am-add-hooks (hooks function &optional append local)
