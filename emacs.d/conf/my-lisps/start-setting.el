@@ -143,11 +143,6 @@ FUN-LIST can be a symbol, also can be a list whose element is a symbol."
 
 (require 'autopair-setting)
 
-(require 'eproject)
-
-(require 'minimap)
-
-
 
 
 (provide 'start-setting)

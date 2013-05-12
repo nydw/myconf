@@ -1,6 +1,7 @@
 
 (require 'c-setting)
 (require 'all-auto-complete-settings)
+(require 'eide)
 
 
 

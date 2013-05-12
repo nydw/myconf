@@ -18,12 +18,12 @@
 (require 'dev-settings)
 (require 'key-map)
 (require 'undo-tree)
+(global-undo-tree-mode)
 (require 'evil)
 (evil-mode 1)
 
 
 
 
-(global-undo-tree-mode)
 
 
