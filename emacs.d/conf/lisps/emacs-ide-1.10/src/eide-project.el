@@ -82,8 +82,8 @@ has already been called."
 (defun eide-i-project-update-frame-title ()
   "Update frame title with project name (or root directory if no project)."
   (if eide-project-name
-    (setq frame-title-format (concat eide-project-name " - Emacs"))
-    (setq frame-title-format (concat eide-root-directory " - Emacs"))))
+    (setq frame-title-format (concat eide-project-name " --->" buffer-file-name))
+    (setq frame-title-format (concat eide-root-directory " --->" buffer-file-name))))
 
 (defun eide-i-project-load (p-startup-flag p-creation-flag)
   "Update environment according to the project in root directory:

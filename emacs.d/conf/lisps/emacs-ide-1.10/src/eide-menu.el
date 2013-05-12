@@ -387,7 +387,8 @@ Argument:
   (let ((l-buffer (eide-menu-get-buffer-name-on-current-line)))
     (eide-i-menu-update-current-buffer l-buffer)
     (eide-windows-select-source-window t)
-    (switch-to-buffer l-buffer)))
+    (switch-to-buffer l-buffer)
+    (eide-i-project-update-frame-title)))
 
 (defun eide-i-menu-file-unfold-functions ()
   "Fold / unfold list of functions for selected file."
