@@ -14,7 +14,6 @@
 (require 'linum-setting)
 (require 'alpha-window)
 (require 'switch-window)
-(require 'minimap)
 (require 'highlight-parentheses)
 
 (define-globalized-minor-mode global-highlight-parentheses-mode

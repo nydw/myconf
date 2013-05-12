@@ -3,9 +3,8 @@
 ;; Time-stamp: <2010-08-28 22:38:00 Saturday by taoshanwen>
 
 
-(when (>= 21 emacs-major-version)
-  (defalias 'move-beginning-of-line 'beginning-of-line)
-  (defalias 'move-end-of-line       'end-of-line))
+(defalias 'move-beginning-of-line 'beginning-of-line)
+(defalias 'move-end-of-line       'end-of-line)
 
 (defun am-add-hooks (hooks function &optional append local)
   "Call `add-hook' on hook list HOOKS 
@@ -41,19 +40,19 @@
 
 (defun apply-args-list-to-fun (fun-list args-list)
   "Apply args list to function FUN-LIST.
-FUN-LIST can be a symbol, also can be a list whose element is a symbol."
+  FUN-LIST can be a symbol, also can be a list whose element is a symbol."
   (let ((is-list (and (listp fun-list) (not (functionp fun-list)))))
     (dolist (args args-list)
       (if is-list
-          (dolist (fun fun-list)
-            (apply-args-to-fun fun args))
+        (dolist (fun fun-list)
+          (apply-args-to-fun fun args))
         (apply-args-to-fun fun-list args)))))
 
 ;;;###autoload
 (defun apply-args-to-fun (fun args)
   "Apply args to function FUN."
   (if (listp args)
-      (eval `(,fun ,@args))
+    (eval `(,fun ,@args))
     (eval `(,fun ,args))))
 
 

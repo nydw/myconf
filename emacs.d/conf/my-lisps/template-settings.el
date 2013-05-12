@@ -6,7 +6,7 @@
 
 (defun template-settings ()
   "settings for `template'."
-  (setq template-default-directories (list (concat my-emacs-path "/templates/")))
+  (setq template-default-directories (list (concat my-emacs-path "/lisps/template/templates/")))
 
   (defvar last-template nil "????ʹ?õ?ģ???ļ?")
 
