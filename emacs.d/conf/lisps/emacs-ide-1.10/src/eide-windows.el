@@ -546,7 +546,8 @@ Argument:
   "Select \"menu\" window (build windows layout if necessary)."
   (if (not eide-windows-is-layout-visible-flag)
     (eide-windows-layout-build))
-  (select-window eide-windows-menu-window))
+  (select-window eide-windows-menu-window)
+  (linum-mode 0))
 
 (defun eide-windows-select-output-window ()
   "Select \"output\" window (build windows layout if necessary)."
