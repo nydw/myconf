@@ -1,4 +1,4 @@
-(require 'taglist)
+;;(require 'taglist)
 (require 'xcscope)
 (require 'which-func-setting)
 

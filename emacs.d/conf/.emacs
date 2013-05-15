@@ -19,8 +19,8 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 (require 'key-map)
-(require 'evil)
-(evil-mode 1)
+;(require 'evil)
+;(evil-mode 1)
 
 
 

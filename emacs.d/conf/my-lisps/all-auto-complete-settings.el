@@ -20,12 +20,12 @@
 ;; hippie expand
 (require 'hippie-expand-settings)
 
-;; 自动补全
+
 (require 'auto-complete-settings)
 
-(require 'company-settings)
+;;(require 'company-settings)
 
-;; 自动插入一些文件模板,用template
+;; template
 (require 'template-settings)
 
 ;; 自动插入一些文件模板
