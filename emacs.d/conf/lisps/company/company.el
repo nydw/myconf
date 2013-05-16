@@ -275,9 +275,9 @@ If this many lines are not available, prefer to display the tooltip above."
     (company-dabbrev-code . "dabbrev for code")
     (company-eclim . "eclim (an Eclipse interace)")
     (company-elisp . "Emacs Lisp")
-    (company-etags . "etags")
+  ;;  (company-etags . "etags")
     (company-files . "Files")
-    (company-gtags . "GNU Global")
+  ;;  (company-gtags . "GNU Global")
     (company-ispell . "ispell")
     (company-keywords . "Programming language keywords")
     (company-nxml . "nxml")
@@ -300,7 +300,7 @@ If this many lines are not available, prefer to display the tooltip above."
 (defcustom company-backends '(company-elisp company-nxml company-css
                               company-eclim company-semantic company-xcode
                               company-ropemacs
-                              (company-gtags company-etags company-dabbrev-code
+                              (company-dabbrev-code
                                company-pysmell company-keywords)
                               company-oddmuse company-files company-dabbrev)
   "*The list of active back-ends (completion engines).

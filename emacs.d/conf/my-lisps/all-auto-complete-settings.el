@@ -23,7 +23,7 @@
 
 (require 'auto-complete-settings)
 
-;;(require 'company-settings)
+(require 'company-settings)
 
 ;; template
 (require 'template-settings)
