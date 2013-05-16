@@ -91,7 +91,7 @@
 (setq x-select-enable-clipboard t)
 
 ;; 缺省使用text-mode
-(setq default-major-mode 'text-mode)
+;;(setq default-major-mode 'text-mode)
 
 ;; 显示列号
 (setq column-number-mode t)
