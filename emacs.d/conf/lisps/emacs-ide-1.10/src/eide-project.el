@@ -79,11 +79,11 @@ has already been called."
     ;; Desktop has not been read: read it now.
     (desktop-read eide-root-directory)))
 
-(defun eide-i-project-update-frame-title ()
+(defun eide-i-project-update-frame-title ())
   "Update frame title with project name (or root directory if no project)."
-  (if eide-project-name
-    (setq frame-title-format (concat eide-project-name " --->" buffer-file-name))
-    (setq frame-title-format (concat eide-root-directory " --->" buffer-file-name))))
+ ; (if eide-project-name
+ ;   (setq frame-title-format (concat eide-project-name " --->" buffer-file-name))
+ ;   (setq frame-title-format (concat eide-root-directory " --->" buffer-file-name))))
 
 (defun eide-i-project-load (p-startup-flag p-creation-flag)
   "Update environment according to the project in root directory:
