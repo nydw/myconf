@@ -1,4 +1,3 @@
-;;奇偶行灰白相间的背景色
 
 (require 'stripes)
 
