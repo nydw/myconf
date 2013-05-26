@@ -25,11 +25,13 @@ DELTA should be a multiple of 10, in the units used by the
 
 (defun increase-default-font-height ()
   (interactive)
-  (increment-default-font-height 10))
+  (increment-default-font-height 10)
+  (set-face-background 'fringe "LightGreen")) 
 
 (defun decrease-default-font-height ()
   (interactive)
-  (increment-default-font-height -10))
+  (increment-default-font-height -10)
+  (set-face-background 'fringe "LightGreen"))  
 
 
 
