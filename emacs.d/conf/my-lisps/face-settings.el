@@ -2,9 +2,9 @@
 
 
 ;;(color-theme-myself)
-(require 'color-theme) 
-(color-theme-initialize)
-(color-theme-myself)
+;(require 'color-theme) 
+;(color-theme-initialize)
+;(color-theme-myself)
 
 
 
@@ -23,9 +23,29 @@
 (global-highlight-parentheses-mode 1)
 (setq hl-paren-colors '("Red" "Cyan" "Brown" "Orange" "Magenta" "Green" "purple" "Red"))
 
+
 (fringe-mode 1)
 (setq fringe-mode 'half-width)
+;(setq-default right-fringe-width 0) 
+(set-face-background 'fringe "LightGreen")
+
+
 (require 'mode-line-setting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 (provide 'face-settings)
