@@ -10,17 +10,16 @@
 (load (concat my-emacs-my-lisps-path "my-subdirs"))
 (my-add-subdirs-to-load-path my-emacs-lisps-path)
 (my-add-subdirs-to-load-path my-emacs-my-lisps-path)
+(set-default-font "Courier New 12")    
 
 (require 'eval-after-load)
 (require 'start-setting)
 (require 'little-setting)
 (require 'dev-settings)
 (require 'face-settings)
-(require 'undo-tree)
-(global-undo-tree-mode)
 (require 'key-map)
-;(require 'evil)
-;(evil-mode 1)
+(require 'evil)
+(evil-mode 1)
 
 
 

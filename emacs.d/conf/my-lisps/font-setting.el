@@ -1,6 +1,5 @@
 (require 'cl)
 
-(set-default-font "Courier New 14")    
 
 (defun font-name-replace-size (font-name new-size)
   (let ((parts (split-string font-name "-")))
