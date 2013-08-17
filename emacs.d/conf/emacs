@@ -18,8 +18,8 @@
 (require 'dev-settings)
 (require 'face-settings)
 (require 'key-map)
-;(require 'evil)
-;(evil-mode 1)
+(require 'evil)
+(evil-mode 1)
 
 
 
