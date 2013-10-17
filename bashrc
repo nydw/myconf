@@ -839,3 +839,6 @@ export LESS_TERMCAP_so=$'\E[44;33m'       # begin standout-mode
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;33m'       # begin underline
 
+alias lfs='chroot /root/devil/lfssystem64 /usr/bin/env -i HOME=/root TERM=$TERM /bin/bash -login'
+alias lfs64='chroot /root/amd64 /usr/bin/env -i HOME=/root TERM=$TERM /bin/bash -login'
+alias lfs386='chroot /root/i386 /usr/bin/env -i HOME=/root TERM=$TERM /bin/bash -login'
